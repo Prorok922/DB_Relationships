@@ -4,6 +4,7 @@
 This project was created for [JavaRush](https://javarush.ru/) publication to show how to create JPA entities and DB relationships. I used [H2](http://www.h2database.com/html/main.html) database.
 
 References to my articles:
+* [JPA Entities and DB Relationships](https://javarush.ru/groups/posts/1982-jpa-entities--db-relationships)
 * [Continuous Integration](https://javarush.ru/groups/posts/594-continuous-integration)
 * [Code Coverage](https://javarush.ru/groups/posts/602-codecov)
 * [Markdown](https://javarush.ru/groups/posts/612-markdown)
