@@ -1,6 +1,7 @@
 package com.qthegamep.forjavarushpublication2.entity;
 
 import lombok.Data;
+import lombok.ToString;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -16,6 +17,7 @@ import javax.persistence.Table;
 import java.util.Set;
 
 @Data
+@ToString(exclude = "books")
 @Entity
 @DynamicInsert
 @DynamicUpdate
