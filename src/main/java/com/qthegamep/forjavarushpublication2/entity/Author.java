@@ -6,12 +6,14 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.Set;
 
 @Data
 @Entity
@@ -30,7 +32,6 @@ public class Author {
     @Column(name = "SECOND_NAME", nullable = false)
     private String secondName;
 
-    @OneToOne
-    @JoinColumn(name = "BOOK_ID", unique = true, nullable = false)
-    private Book book;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "author")
+    private Set<Book> booksSet;
 }
