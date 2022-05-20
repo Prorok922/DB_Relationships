@@ -52,7 +52,9 @@
         <hibernate.version>5.3.6.Final</hibernate.version>
 
         <!-- H2 JDBC -->
+        <!--
         <h2-jdbc.version>1.4.197</h2-jdbc.version>
+        -->
     </properties>
 
     <build>
@@ -171,10 +173,11 @@
 
         <!-- Database -->
         <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>${h2-jdbc.version}</version>
         </dependency>
+        -->
     </dependencies>
 </project>
